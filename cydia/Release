@@ -1,0 +1,8 @@
+Origin: Adriano Junior's Repo
+Label: Adriano Junior
+Suite: stable
+Version: 1.0
+Codename: ajrepo
+Architectures: iphoneos-arm
+Components: main
+Description: Adriano Junior's Repository
