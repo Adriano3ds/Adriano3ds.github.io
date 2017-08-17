@@ -1,0 +1,8 @@
+{
+	"name": "EmojiType",
+	"desc_short": "Replaces, everything possible, with the respective emoji when typed!",
+	"desc_long": "Replaces the characters, when typed, to an respective emoji to that character!<br><br>Characters with multiple emojis can be configured in settings!",
+	"compatitle": "iOS 9, 10",
+	"changelog": "<strong>1.0.0</strong><br>First Version.<br>",
+	"screenshot": "<div style='text-align:center;'><a href='http://moreinfo.thebigboss.org/moreinfo/emojitype1.jpg' target='_blank'><img width=95% src='http://moreinfo.thebigboss.org/moreinfo/emojitype1.jpg'/></a><br><a href='http://moreinfo.thebigboss.org/moreinfo/emojitype2.jpg' target='_blank'><img width=95% src='http://moreinfo.thebigboss.org/moreinfo/emojitype2.jpg'/></a><br><a href='http://moreinfo.thebigboss.org/moreinfo/emojitype3.jpg' target='_blank'><img width=95% src='http://moreinfo.thebigboss.org/moreinfo/emojitype3.jpg'/></a></div>",
+}
