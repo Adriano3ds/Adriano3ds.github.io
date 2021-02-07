@@ -1,0 +1,325 @@
+@charset "UTF-8";
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  background: transparent;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #007bff;
+}
+
+h1.greetings {
+  font-size: 5em;
+  color: white;
+}
+
+.leading {
+  font-size: 2em;
+  color: white;
+}
+
+div.bg-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-1vh {
+  height: 1vh;
+}
+
+.scroll {
+  position: fixed;
+  right: 25px;
+  z-index: 10;
+  font-size: 3.4em;
+  opacity: 0.3;
+}
+.scroll.down {
+  bottom: 10px;
+  -webkit-animation: bouncy-down-animation 3s linear infinite;
+  -moz-animation: bouncy-down-animation 3s linear infinite;
+  -ms-animation: bouncy-down-animation 3s linear infinite;
+  -o-animation: bouncy-down-animation 3s linear infinite;
+  animation: bouncy-down-animation 3s linear infinite;
+}
+.scroll.up {
+  top: 10px;
+  -webkit-animation: bouncy-top-animation 3s linear infinite;
+  -moz-animation: bouncy-top-animation 3s linear infinite;
+  -ms-animation: bouncy-top-animation 3s linear infinite;
+  -o-animation: bouncy-top-animation 3s linear infinite;
+  animation: bouncy-top-animation 3s linear infinite;
+}
+
+@-webkit-keyframes bouncy-down-animation {
+  0% {
+    bottom: 10px;
+  }
+  12.5% {
+    bottom: 20px;
+  }
+  25% {
+    bottom: 10px;
+  }
+  37.5% {
+    bottom: 20px;
+  }
+  50%, 100% {
+    bottom: 10px;
+  }
+}
+@keyframes bouncy-down-animation {
+  0% {
+    bottom: 10px;
+  }
+  12.5% {
+    bottom: 20px;
+  }
+  25% {
+    bottom: 10px;
+  }
+  37.5% {
+    bottom: 20px;
+  }
+  50%, 100% {
+    bottom: 10px;
+  }
+}
+@-webkit-keyframes bouncy-top-animation {
+  0% {
+    top: 10px;
+  }
+  12.5% {
+    top: 20px;
+  }
+  25% {
+    top: 10px;
+  }
+  37.5% {
+    top: 20px;
+  }
+  50%, 100% {
+    top: 10px;
+  }
+}
+@keyframes bouncy-top-animation {
+  0% {
+    top: 10px;
+  }
+  12.5% {
+    top: 20px;
+  }
+  25% {
+    top: 10px;
+  }
+  37.5% {
+    top: 20px;
+  }
+  50%, 100% {
+    top: 10px;
+  }
+}
+.profile-img {
+  width: 166px;
+  height: 166px;
+  border-radius: 100%;
+  -webkit-animation: profile-img-div-rotation 30s linear infinite;
+  -moz-animation: profile-img-div-rotation 30s linear infinite;
+  -ms-animation: profile-img-div-rotation 30s linear infinite;
+  -o-animation: profile-img-div-rotation 30s linear infinite;
+  animation: profile-img-div-rotation 30s linear infinite;
+}
+.profile-img img {
+  -webkit-animation: profile-img-rotation 30s linear infinite;
+  -moz-animation: profile-img-rotation 30s linear infinite;
+  -ms-animation: profile-img-rotation 30s linear infinite;
+  -o-animation: profile-img-rotation 30s linear infinite;
+  animation: profile-img-rotation 30s linear infinite;
+}
+
+@-webkit-keyframes profile-img-div-rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes profile-img-div-rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes profile-img-rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes profile-img-rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+.card.square {
+  width: 200px;
+  height: 200px;
+}
+
+.h-scroll {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.h-scroll .card.square {
+  flex-shrink: 0;
+  margin: 10px;
+}
+.h-scroll::-webkit-scrollbar {
+  display: block;
+  height: 8px;
+  border: 0px none black;
+  border-radius: 15px;
+  background: #0062cc;
+}
+.h-scroll::-webkit-scrollbar-track {
+  border: 0px none black;
+  border-radius: 15px;
+}
+.h-scroll::-webkit-scrollbar-thumb {
+  background: #003166;
+  border-radius: 15px;
+}
+
+.shadow-right {
+  position: absolute;
+  width: 10%;
+  right: 0;
+  z-index: 5;
+  height: 220px;
+  background: -webkit-linear-gradient(transparent, white);
+  background: -o-linear-gradient(transparent, white);
+  background: -moz-linear-gradient(transparent, white);
+  background: linear-gradient(to right, transparent 10px, #007bff);
+}
+
+.shadow-left {
+  position: absolute;
+  width: 10%;
+  left: 0;
+  z-index: 5;
+  height: 220px;
+  background: -webkit-linear-gradient(transparent, white);
+  background: -o-linear-gradient(transparent, white);
+  background: -moz-linear-gradient(transparent, white);
+  background: linear-gradient(to left, transparent 10px, #007bff);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.social {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  margin: 5px;
+}
+
+a.social:hover {
+  color: inherit;
+}
+a.social:active {
+  color: inherit;
+}
+a.social:visited {
+  color: inherit;
+}
+a.social:link {
+  color: inherit;
+}
+
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  height: 1.33333333em;
+  line-height: 1em;
+  border-radius: 50%;
+  border: solid 1px #003166;
+}
+
+.flag-icon:before {
+  content: " ";
+}
+
+.flag-icon-br {
+  background-image: url(../images/flags/4x3/br.svg);
+}
+
+.flag-icon-br.flag-icon-squared {
+  background-image: url(../images/flags/1x1/br.svg);
+}
+
+.flag-icon-us {
+  background-image: url(../images/flags/4x3/us.svg);
+}
+
+.flag-icon-us.flag-icon-squared {
+  background-image: url(../images/flags/1x1/us.svg);
+}
+
+#language-selector {
+  position: absolute;
+  z-index: 10;
+  font-size: 1.8em;
+  top: 15px;
+  right: 25px;
+}
+#language-selector i {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+#language-selector i.selected {
+  z-index: 15;
+}
+#language-selector i.to-select {
+  top: 40px;
+}
+
+/*# sourceMappingURL=page.css.map */
