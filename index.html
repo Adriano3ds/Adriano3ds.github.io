@@ -1,246 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Adriano Junior's personal web page with his known technologies and some projects.">
 	<title>Adriano Junior</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/acss.css">
-	<link rel="stylesheet" href="css/page.css">
-	<link rel="stylesheet" href="css/SlidyPages.css">
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	<script src="https://kit.fontawesome.com/12a0a41501.js" crossorigin="anonymous"></script>
-	<script src="js/internationalization.js"></script>
-	<style>
-		img[alt*="000webhost"],
-		img[alt*="000webhost"][style],
-		img[src*="000webhost"],
-		img[src*="000webhost"][style],
-		body > div:nth-last-of-type(1)[style]{
-			opacity: 0 !important;
-			pointer-events:none !important;
-			width: 0px !important;
-			height: 0px !important;
-			visibility:hidden !important;
-			display:none !important;
-		}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div id="language-selector" class="clickable" data-selected='true'><i id="brflag" class="flag-icon flag-icon-br flag-icon-squared selected"></i><i id="usflag" class="flag-icon flag-icon-us flag-icon-squared"></i></div>
-	<div id="scrollup" class="scroll up clickable" hidden><i class="fa fa-angle-double-up"></i></div>
-	<div id="scrolldown" class="scroll down clickable"><i class="fa fa-angle-double-down"></i></div>
-	<div id="page0" class="container row align-items-center bg-primary h-100 text-center">
-		<div class="col justify-content-center h-100">
-			<h1 class="greetings" i18key="hi">Olá!</h1>
-			<h3 class="leading" i18key="welcome">Seja bem vindo!</h3>
-		</div>
-	</div>
-	<div id="page1" class="container row align-items-center bg-primary h-100 text-center">
-		<div class="col justify-content-center align-items-center h-100">
-			<h1 class="leading" i18key="whoami">QUEM SOU EU?</h1>
-			<div class="profile-img border-m border-style-dashed">
-				<img class="profile thumb-m circular" src="images/profile.jpeg" alt="">
-			</div>
-			<h3 class="font-lighter" i18key='myname'>Meu nome é <u class="font-bolder">Adriano Junior</u></h3>
-			<h4 id="about1" class="font-lighter" i18key='shortbio1'>Tenho $idade$ anos e sou estudante de Engenharia Biomédica na Universidade Federal de Uberlândia.</h4>
-		</div>
-	</div>
-	<div id="page2" class="container row align-items-center bg-primary h-100 text-center">
-		<div class="col justify-content-center align-items-center h-100">
-			<h1 class="leading"><i class="fas fa-info-circle"></i></h1>
-			<h4 class="font-lighter" i18key='shortbio2'>O desejo de poder inovar e criar coisas novas foi o que me fez escolher a engenharia.</h4>
-			<h4 class="font-lighter" i18key='shortbio3'>Sempre gostei muito de programação.<br><br>Fui duas vezes monitor da disciplina Introdução à Tecnologia da Computação, a qual envolvia programar em C.</h4>
-		</div>
-	</div>
-	<div id="page3" class="container row align-items-center bg-primary h-100 text-center">
-		<div class="col justify-content-center align-items-center h-100">
-			<h1 class="leading"><i class="fas fa-code"></i></h1>
-			<h3 class="font-lighter" i18key='knowledgein'>Tenho conhecimentos em:</h3>
-			<div class="row">
-				<ul class="font-lighter text-left">
-					<li>Python</li>
-					<li>Java</li>
-					<li>C#</li>
-					<li>C/C++</li>
-					<li>Ruby</li>
-				</ul>
-				<ul class="font-lighter text-left">
+	<main>
+		<section class="introduction">
+			<h1 class="welcome">Welcome!</h1>
+			<h2 class="meet-text">Meet Adriano Junior</h2>
+			<figure>
+				<img src="images/profile.jpeg" alt="A photo of Adriano Junior" class="profile-picture">
+			</figure>
+		</section>
+		<section class="wave-section">
+			<svg class="upper-wave" width="1920" height="100" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 85.5023L107.2 76.5958C212.8 67.6893 427.2 49.8763 640 53.4389C852.8 57.0015 1067.2 81.9397 1280 92.6275C1492.8 103.315 1707.2 99.7527 1812.8 97.9714L1920 96.1901V0H1812.8C1707.2 0 1492.8 0 1280 0C1067.2 0 852.8 0 640 0C427.2 0 212.8 0 107.2 0H0V85.5023Z" fill="#006FE6"/>
+			</svg>
+		</section>
+		<section class="about-me">
+			<h2 class="section-title">About Me</h2>
+			<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_sSF6EG.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+			<p class="about-me-text">I’m a biomedical engineer student passionate about programming and with a huge desire to inovate and create new things.</p>
+		</section>
+		<section class="known-technologies">
+			<h2 class="section-title">Known Technologies</h2>
+			<div class="card-group">
+			<div class="card">
+				<h3 class="card-title">&lt;div id=”<span class="main-title">front-end</span>”...</h3>
+				<ul class="card-list">
 					<li>HTML</li>
-					<li>Javascript</li>
+					<li>JavaScript</li>
 					<li>CSS</li>
 					<li>PHP</li>
-					<li>MySQL</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div id="page4" class="container row align-items-center bg-primary h-100 text-center">
-		<div class="col justify-content-center align-items-center h-100">
-			<h1 class="leading"><i class="fas fa-laptop-code"></i></h1>
-			<h3 class="font-lighter" i18key='workedwith'>Ja mexi com:</h3>
-			<div class="row">
-				<ul class="font-lighter text-left">
-					<li>Android Studio</li>
-					<li>Unity3D</li>
-					<li>Arduino</li>
-					<li>Flutter</li>
-				</ul>
-				<ul class="font-lighter text-left">
-					<li>NodeJS</li>
-					<li>Ruby on Rails</li>
-					<li>SASS</li>
 					<li>Bootstrap</li>
 					<li>JQuery</li>
 				</ul>
 			</div>
-		</div>
-	</div>
-	<div id="page5" class="container row align-items-center bg-primary h-100 text-center">
-		<div class="col justify-content-center align-items-center h-100">
-			<h1 class="leading"><i class="fas fa-tools"></i></h1>
-			<h3 class="font-lighter" i18key='projects'>PROJETOS</h3>
-			<div class="row justify-content-center w-100">
-				<div class="h-scroll" scrollable="horizontal">
-					<div class="shadow-right" hidden></div>
-					<div class="shadow-left" hidden></div>
-					<div class="card square clickable" data-toggle="modal" data-target="#desafioajModal">
-						<div class="card-body col justify-content-center">
-							<h2 class="card-title">Desafio A.J</h2>
-							<p class="card-subtitle" i18key='clicktolearn'>Clique para saber mais</p>
-						</div>
-					</div>
-					<div class="card square clickable" data-toggle="modal" data-target="#cdeckModal">
-						<div class="card-body col justify-content-center">
-							<h2 class="card-title">CDeck</h2>
-							<p class="card-subtitle" i18key='clicktolearn'>Clique para saber mais</p>
-						</div>
-					</div>
-					<div class="card square clickable" data-toggle="modal" data-target="#biofizzModal">
-						<div class="card-body col justify-content-center">
-							<h2 class="card-title">Biofizz</h2>
-							<p class="card-subtitle" i18key='clicktolearn'>Clique para saber mais</p>
-						</div>
-					</div>
+			<div class="card">
+				<h3 class="card-title">class <span class="main-title">BackEnd</span> {...</h3>
+				<ul class="card-list">
+					<li>Java</li>
+					<li>Python</li>
+					<li>C#</li>
+					<li>C++</li>
+					<li>C</li>
+					<li>Ruby</li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3 class="card-title">$ cat <span class="main-title">Others</span>.txt</h3>
+				<ul class="card-list">
+					<li>Android Studio</li>
+					<li>Unity3D</li>
+					<li>Arduino</li>
+					<li>MySQL</li>
+					<li>SASS</li>
+					<li>Git</li>
+				</ul>
+			</div>
+			</div>
+		</section>
+		<section class="projects">
+			<h2 class="section-title">Projects</h2>
+			<div class="project-left">
+				<figure>
+					<img src="images/SlidyPages.png" alt="A screenshot of the SlidyPage's website" class="project-image">
+				</figure>
+				<div class="project-description">
+					<h3 class="project-title">SlidyPages</h3>
+					<p class="project-description-text">
+						A script and css stylesheet that allows to create presentations like page with a vertical scroll. Like a PowerPoint Presentation with a vertical scroll, but on the web.
+					</p>
+					<a href="#" target="_blank" class="project-link">Check it out here</a>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div id="page6" class="container row align-items-center bg-primary h-100 text-center">
-		<div class="col justify-content-center align-items-center h-100">
-			<h1 class="leading"><i class="fas fa-users"></i></h1>
-			<h3 class="font-lighter" i18key='networks'>MINHAS REDES</h3>
-			<div class="row justify-content-center">
-				<a href="https://www.linkedin.com/in/adrianorsjr" target="_blank" class="social clickable"><i class="fab fa-linkedin"></i></a>
-				<a href="https://github.com/Adriano3ds" target="_blank" class="social clickable"><i class="fab fa-github"></i></a>
-				<a href="https://twitter.com/Adriano_RSJR" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
-			</div>
-		</div>
-	</div>
 
-	<!-- MODALS -->
+			<div class="project-right">
+				<figure>
+					<img src="images/CoisasQueAmoEmVoce.png" alt="A screenshot of the Coisas Que Amo em Voce's website" class="project-image">
+				</figure>
+				<div class="project-description">
+					<h3 class="project-title">“Coisas que Amo em Você”</h3>
+					<p class="project-description-text">
+						A website using nodejs that I made for my girlfiend that showed her every day a reason on why I love her. It was my first application using MongoDB.
+					</p>
+					<a href="#" target="_blank" class="project-link">Check it out here</a>
+				</div>
+			</div>
 
-	<div class="modal fade" id="desafioajModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="">Desafio A.J</h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
+			<div class="project-left">
+				<figure>
+					<img src="images/PersonalPageV2.png" alt="A screenshot of the second version of my personal website" class="project-image">
+				</figure>
+				<div class="project-description">
+					<h3 class="project-title">Personal Site v2</h3>
+					<p class="project-description-text">
+						My old personal webpage that used a custom script made by myself called SlidyPages.
+					</p>
+					<a href="#" target="_blank" class="project-link">Check it out here</a>
+				</div>
 			</div>
-			<div class="modal-body">
-				<p i18key="desafioajdesc">O Desafio A.J foi um site com desafios de lógica/matemática que fiz enquanto ainda estava no ensino médio. O site contava com um sistema de convite de para cadastro, com o qual o administrador deveria gerar um código para a determinada pessoa poder se registrar; login; e um painel de administrador.</p>
-				<p><span i18key="wasused">Foi utilizado:</span> HTML, CSS, Javascript, Bootstrap, PHP, MySQL, JQuery</p>
-			</div>
-			<div class="modal-footer">
-				<a href="https://adrianojr.tk/desafio" target="_blank" class="btn btn-primary" i18key="access">Acessar</a>
-				<button type="button" class="btn btn-danger" data-dismiss="modal" i18key="close">Fechar</button>
-			</div>
-		  </div>
+		</section>
+	</main>
+	<section class="wave-section">
+		<svg class="bottom-wave" width="1920" height="100" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M1920 100V44.5406L1812.8 46.3765C1707.2 48.2124 1492.8 51.8842 1280 40.8688C1195.03 36.4702 1109.8 29.7299 1024.52 22.9855C896.233 12.8396 767.828 2.68449 640 0.478856C427.2 -3.19295 212.8 15.1661 107.2 24.3456L0 33.5251V100H1920Z" fill="#006FE6"/>
+		</svg>
+	</section>
+	<footer>
+		<div class="social-networks">
+			<a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+			<a href="#" class="social-link"><i class="fa fa-github"></i></a>
+			<a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
 		</div>
-	  </div>
-
-	  <div class="modal fade" id="cdeckModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="">CDeck</h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
-			<div class="modal-body">
-				<p i18key="cdeckdesc">CDeck é uma pequena biblioteca em C que permite a criação e uso de cartas em C. Além disso, ela permite imprimir a frente e o verso das cartas.</p>
-				<p><span i18key="wasused">Foi utilizado:</span> C</p>
-			</div>
-			<div class="modal-footer">
-				<a href="https://github.com/Adriano3ds/CDeck" target="_blank" class="btn btn-primary" i18key="access">Acessar</a>
-				<button type="button" class="btn btn-danger" data-dismiss="modal" i18key="close">Fechar</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
-
-	  <div class="modal fade" id="biofizzModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="">Biofizz</h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
-			<div class="modal-body">
-				<p i18key="biofizzdesc">Biofizz é um jogo desafiador e divertido de perguntas e respostas, cujo assunto é biofísica de sistemas, desenvolvido pelos alunos de Engenharia Biomédica, na disciplina de Biofísica do ano 2019-1.<br><br>Monte a sua equipe, desafie seus amigos e ganhe esta corrida.<br><br>Orientação: Prof. Ms. Marina Abadia Ramos – Instituto de Ciências Biomédicas, ICBIM, DEBIOF – Departamento de Biofísica, Universidade Federal de Uberlândia. Julho, 2019.</p>
-				<p><span i18key="wasused">Foi utilizado:</span> Unity, C#</p>
-			</div>
-			<div class="modal-footer">
-				<a href="https://github.com/Adriano3ds/Biofizz" target="_blank" class="btn btn-primary" i18key="access">Acessar</a>
-				<button type="button" class="btn btn-danger" data-dismiss="modal" i18key="close">Fechar</button>
-			</div>
-		  </div>
-		</div>
-	</div>
-
-	  <div id="pagination">
-		<div class="radio-container">
-			<input type="radio" name="page" id="page1" checked>
-			<div class="selector"></div>
-		</div>
-		<div class="radio-container">
-			<input type="radio" name="page" id="page2">
-			<div class="selector"></div>
-		</div>
-		<div class="radio-container">
-			<input type="radio" name="page" id="page3">
-			<div class="selector"></div>
-		</div>
-		<div class="radio-container">
-			<input type="radio" name="page" id="page4">
-			<div class="selector"></div>
-		</div>
-		<div class="radio-container">
-			<input type="radio" name="page" id="page5">
-			<div class="selector"></div>
-		</div>
-		<div class="radio-container">
-			<input type="radio" name="page" id="page6">
-			<div class="selector"></div>
-		</div>
-		<div class="radio-container">
-			<input type="radio" name="page" id="page7">
-			<div class="selector"></div>
-		</div>
-	</div>
-
-	<!-- Adicionar no rodapé  -->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-	<script src="js/scripts.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/SlidyPages.js"></script>
+	</footer>
 </body>
 </html>
