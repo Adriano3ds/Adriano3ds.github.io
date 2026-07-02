@@ -59,6 +59,7 @@
 html {
 	scroll-behavior: smooth;
 	scroll-padding-top: calc(var(--nav-height) + 1rem);
+	overflow-x: clip; /* clamp decorative hero glow that drifts past the right edge */
 }
 
 body {
