@@ -2,124 +2,288 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Adriano Junior's personal web page with his known technologies and some projects.">
-	<title>Adriano Junior</title>
-	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-	<script src="https://kit.fontawesome.com/12a0a41501.js" crossorigin="anonymous"></script>
+	<meta name="description" content="Adriano Junior. R&D Specialist and Senior Software Engineer building software for X-ray imaging, medical devices and hardware-software integration.">
+	<meta property="og:title" content="Adriano Junior · R&D Specialist">
+	<meta property="og:description" content="Software for X-ray imaging, medical devices and hardware-software integration.">
+	<meta property="og:image" content="images/profile.jpeg">
+	<title>Adriano Junior · R&D Specialist</title>
+	<link rel="preload" href="fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/space-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+	<script src="js/content.js" defer></script>
+	<script src="js/main.js" defer></script>
 </head>
 <body>
-	<main>
-		<section class="introduction">
-			<h1 class="welcome">Welcome!</h1>
-			<h2 class="meet-text">Meet Adriano Junior</h2>
-			<figure>
-				<img src="images/profile.jpeg" alt="A photo of Adriano Junior" class="profile-picture">
+
+	<header class="site-nav">
+		<a href="#top" class="nav-brand">adriano<span class="brand-accent">.junior</span></a>
+		<nav class="nav-links" id="nav-links" aria-label="Main navigation">
+			<a href="#about">About</a>
+			<a href="#experience">Experience</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+			<span></span><span></span>
+		</button>
+	</header>
+
+	<main id="top">
+
+		<!-- ============ HERO ============ -->
+		<section class="hero">
+			<div class="hero-text">
+				<h1 class="hero-headline" data-content="heroHeadline">
+					Software where <em>hardware</em> meets healthcare.
+				</h1>
+				<p class="hero-sub" data-content="heroSub">
+					I'm Adriano Junior, R&amp;D Specialist and Senior Software Engineer building
+					X-ray imaging systems and medical device software at Alliage.
+				</p>
+				<div class="hero-ctas">
+					<a href="cv/resume.pdf" target="_blank" rel="noopener" class="btn btn-primary">View resume</a>
+					<a href="#projects" class="btn btn-ghost">See projects</a>
+				</div>
+			</div>
+			<figure class="hero-photo">
+				<img src="images/profile.jpeg" alt="Portrait of Adriano Junior" width="480" height="480">
+				<figcaption class="hero-photo-caption">Ribeirão Preto, Brazil</figcaption>
 			</figure>
 		</section>
-		<section class="wave-section">
-			<svg class="upper-wave" width="1920" height="100" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 85.5023L107.2 76.5958C212.8 67.6893 427.2 49.8763 640 53.4389C852.8 57.0015 1067.2 81.9397 1280 92.6275C1492.8 103.315 1707.2 99.7527 1812.8 97.9714L1920 96.1901V0H1812.8C1707.2 0 1492.8 0 1280 0C1067.2 0 852.8 0 640 0C427.2 0 212.8 0 107.2 0H0V85.5023Z" fill="#006FE6"/>
-			</svg>
-		</section>
-		<section class="about-me">
-			<h2 class="section-title">About Me</h2>
-			<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_sSF6EG.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-			<p class="about-me-text">I’m a biomedical engineer student passionate about programming and with a huge desire to inovate and create new things.<br>Also, I'm interested in signal processing, medical devices and neuroengineering.</p>
-		</section>
-		<section class="known-technologies">
-			<h2 class="section-title">Known Technologies</h2>
-			<div class="card-group">
-			<div class="card">
-				<h3 class="card-title">&lt;div id=”<span class="main-title">front-end</span>”...</h3>
-				<ul class="card-list">
-					<li>HTML</li>
-					<li>JavaScript</li>
-					<li>CSS</li>
-					<li>PHP</li>
-					<li>Bootstrap</li>
-					<li>JQuery</li>
-				</ul>
-			</div>
-			<div class="card">
-				<h3 class="card-title">class <span class="main-title">BackEnd</span> {...</h3>
-				<ul class="card-list">
-					<li>Java</li>
-					<li>Python</li>
-					<li>C#</li>
-					<li>C++</li>
-					<li>C</li>
-					<li>Ruby</li>
-				</ul>
-			</div>
-			<div class="card">
-				<h3 class="card-title">$ cat <span class="main-title">Others</span>.txt</h3>
-				<ul class="card-list">
-					<li>Android Studio</li>
-					<li>Unity3D</li>
-					<li>Arduino</li>
-					<li>MySQL</li>
-					<li>SASS</li>
-					<li>Git</li>
-				</ul>
-			</div>
-			</div>
-		</section>
-		<section class="projects">
-			<h2 class="section-title">Projects</h2>
-			<div class="project-left">
-				<figure>
-					<img src="images/SlidyPages.png" alt="A screenshot of the SlidyPage's website" class="project-image">
-				</figure>
-				<div class="project-description">
-					<h3 class="project-title">SlidyPages</h3>
-					<p class="project-description-text">
-						A script and css stylesheet that allows to create presentations like page with a vertical scroll. Like a PowerPoint Presentation with a vertical scroll, but on the web.
-					</p>
-					<a href="/SlidyPages" target="_blank" class="project-link">Check it out here</a>
-				</div>
-			</div>
 
-			<div class="project-right">
-				<figure>
-					<img src="images/CoisasQueAmoEmVoce.png" alt="A screenshot of the Coisas Que Amo em Voce's website" class="project-image">
-				</figure>
-				<div class="project-description">
-					<h3 class="project-title">“Coisas que Amo em Você”</h3>
-					<p class="project-description-text">
-						A website using nodejs that I made for my girlfiend that showed her every day a reason on why I love her. It was my first application using MongoDB.
-					</p>
-					<a href="https://coisasqueamoemvoce.herokuapp.com" target="_blank" class="project-link">Check it out here</a>
-				</div>
+		<!-- ============ ABOUT ============ -->
+		<section class="about" id="about">
+			<h2 class="section-title">About</h2>
+			<div class="about-body">
+				<p class="about-lead" data-content="aboutLead">
+					I turn complex technical requirements into reliable software for regulated,
+					real-world environments. My work lives in the space between backend systems
+					and embedded firmware: X-ray equipment, imaging pipelines, device monitoring
+					platforms and AI-powered accessibility tools.
+				</p>
+				<p>
+					Trained as a biomedical engineer and grown into R&amp;D, I've shipped software
+					used in clinics and factories, collaborated with international partners, and
+					I'm currently incubating a health-focused startup on the side.
+				</p>
 			</div>
+			<dl class="facts">
+				<div class="fact">
+					<dt>Role</dt>
+					<dd>R&amp;D Specialist · Alliage</dd>
+				</div>
+				<div class="fact">
+					<dt>Education</dt>
+					<dd>BSc Biomedical Engineering · UFU</dd>
+				</div>
+				<div class="fact">
+					<dt>Focus</dt>
+					<dd>Backend · Embedded · Medical imaging</dd>
+				</div>
+				<div class="fact">
+					<dt>Languages</dt>
+					<dd>Portuguese · English</dd>
+				</div>
+			</dl>
+		</section>
 
-			<div class="project-left">
-				<figure>
-					<img src="images/PersonalPageV2.png" alt="A screenshot of the second version of my personal website" class="project-image">
-				</figure>
-				<div class="project-description">
-					<h3 class="project-title">Personal Site v2</h3>
-					<p class="project-description-text">
-						My old personal webpage that used a custom script made by myself called SlidyPages.
-					</p>
-					<a href="/v2" target="_blank" class="project-link">Check it out here</a>
+		<!-- ============ EXPERIENCE ============ -->
+		<section class="experience" id="experience">
+			<h2 class="section-title">Experience</h2>
+			<ol class="timeline">
+				<li class="timeline-item">
+					<p class="timeline-period">Nov 2024 · present</p>
+					<div class="timeline-content">
+						<h3>R&amp;D Specialist <span class="at">Alliage</span></h3>
+						<p>
+							Leading research and development of X-ray systems: firmware fault detection
+							for electrical arcs, sensor integration and a next-generation X-ray product
+							under validation. Gave the image-quality sign-off that qualified a new sensor
+							supplier from a UK-based partner, and created the blocking and monitoring
+							system for the intraoral scanner and sensor.
+						</p>
+						<ul class="tags">
+							<li>Java</li><li>Python</li><li>C/C++</li><li>Firmware</li><li>Systems integration</li>
+						</ul>
+					</div>
+				</li>
+				<li class="timeline-item">
+					<p class="timeline-period">Jul 2024 · present</p>
+					<div class="timeline-content">
+						<h3>Freelance Software Developer <span class="at">Independent</span></h3>
+						<p>
+							End-to-end delivery for healthcare and business clients: Android software for
+							assistive devices used by blind users, with AI text recognition and image
+							description, plus full-stack platforms in Spring, Angular and Next.js.
+							Optimized a client's C/C++ OCR engine used from Java/Kotlin on Android,
+							eliminating memory leaks and improving performance across the app.
+						</p>
+						<ul class="tags">
+							<li>Kotlin</li><li>Android</li><li>C/C++</li><li>Spring</li><li>Next.js</li><li>PostgreSQL</li>
+						</ul>
+					</div>
+				</li>
+				<li class="timeline-item">
+					<p class="timeline-period">Oct 2023 · Nov 2024</p>
+					<div class="timeline-content">
+						<h3>Software Developer <span class="at">Alliage</span></h3>
+						<p>
+							Built implant visualization for a CT exam viewer across axial, coronal, sagittal
+							and 3D views using quaternions and GLSL shaders. Rewrote the nerve tracing module
+							from 2,000 lines down to 700 and made server data loading 7x faster. Also helped
+							calibrate ADC readings in STM firmware for more accurate power-supply and
+							battery measurements.
+						</p>
+						<ul class="tags">
+							<li>Java</li><li>C++</li><li>GLSL</li><li>3D rendering</li><li>Performance</li>
+						</ul>
+					</div>
+				</li>
+				<li class="timeline-item">
+					<p class="timeline-period">Sep 2022 · Oct 2023</p>
+					<div class="timeline-content">
+						<h3>Junior Software Developer <span class="at">Alliage</span></h3>
+						<p>
+							Designed a device monitoring and blocking platform from scratch in Python and
+							Django, integrated with C/C++ firmware. It let the company finance its own equipment
+							safely, and a banking partner later asked to integrate with it.
+						</p>
+						<ul class="tags">
+							<li>Python</li><li>Django</li><li>C/C++</li><li>AWS</li>
+						</ul>
+					</div>
+				</li>
+				<li class="timeline-item">
+					<p class="timeline-period">Dec 2021 · Sep 2022</p>
+					<div class="timeline-content">
+						<h3>R&amp;D Intern <span class="at">Alliage</span></h3>
+						<p>
+							First contact with medical imaging software: DICOM protocol work that later
+							solved a deployment issue in Croatia, and code obfuscation to protect the
+							company's algorithms.
+						</p>
+						<ul class="tags">
+							<li>Java</li><li>DICOM</li><li>Python</li><li>C++</li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+		</section>
+
+		<!-- ============ STACK ============ -->
+		<section class="stack" id="stack">
+			<h2 class="section-title">Stack</h2>
+			<div class="stack-groups">
+				<div class="stack-group">
+					<h3>Languages</h3>
+					<ul class="chips">
+						<li>Java</li><li>Python</li><li>Kotlin</li><li>C</li><li>C++</li><li>JavaScript</li><li>C#</li>
+					</ul>
+				</div>
+				<div class="stack-group">
+					<h3>Backend &amp; cloud</h3>
+					<ul class="chips">
+						<li>Spring</li><li>Django</li><li>REST APIs</li><li>PostgreSQL</li><li>MySQL</li><li>AWS</li>
+					</ul>
+				</div>
+				<div class="stack-group">
+					<h3>Systems &amp; devices</h3>
+					<ul class="chips">
+						<li>Embedded firmware</li><li>STM32</li><li>ESP32</li><li>Arduino</li><li>DICOM</li><li>GLSL shaders</li><li>Hardware integration</li>
+					</ul>
+				</div>
+				<div class="stack-group">
+					<h3>Mobile &amp; web</h3>
+					<ul class="chips">
+						<li>Android</li><li>Angular</li><li>Next.js</li>
+					</ul>
 				</div>
 			</div>
 		</section>
+
+		<!-- ============ PROJECTS ============ -->
+		<section class="projects" id="projects">
+			<h2 class="section-title">Selected work</h2>
+			<ul class="project-index">
+				<li class="project-row">
+					<div class="project-link-area is-static">
+						<div class="project-main">
+							<h3>Assistive vision devices</h3>
+							<p>Android software for hardware used by blind and visually impaired users, with AI text recognition and image description from the device camera.</p>
+						</div>
+						<span class="project-meta">Android · Kotlin · AI · Private client work</span>
+					</div>
+				</li>
+				<li class="project-row">
+					<a class="project-link-area" href="https://www.peteletricaufu.com.br/static/ceel/artigos/artigo_541.pdf" target="_blank" rel="noopener">
+						<div class="project-main">
+							<h3>Geiger-Müller radiation counter</h3>
+							<p>Low-cost ionizing radiation monitor with custom high-voltage electronics. Published as a book chapter in Engenharia 4.0 (Pascal, 2021).</p>
+						</div>
+						<span class="project-meta">Electronics · Research</span>
+						<i class="ph ph-arrow-up-right project-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="project-row">
+					<a class="project-link-area" href="https://github.com/Adriano3ds/Biofizz" target="_blank" rel="noopener">
+						<div class="project-main">
+							<h3>Biofizz</h3>
+							<p>A multiplayer quiz game on biophysics built solo in Unity and C#, with race and time-challenge modes for up to 4 players.</p>
+						</div>
+						<span class="project-meta">Unity · C#</span>
+						<i class="ph ph-arrow-up-right project-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="project-row">
+					<a class="project-link-area" href="/SlidyPages" target="_blank" rel="noopener">
+						<div class="project-main">
+							<h3>SlidyPages</h3>
+							<p>A tiny script and stylesheet for building presentation-style pages with vertical scroll, like slides on the web.</p>
+						</div>
+						<span class="project-meta">JavaScript · CSS</span>
+						<i class="ph ph-arrow-up-right project-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="project-row">
+					<a class="project-link-area" href="https://dev.bukkit.org/members/adriano3ds/projects" target="_blank" rel="noopener">
+						<div class="project-main">
+							<h3>Bukkit plugins</h3>
+							<p>Where it all started: custom Java plugins for Minecraft servers, published for the community as a teenager.</p>
+						</div>
+						<span class="project-meta">Java · 2013</span>
+						<i class="ph ph-arrow-up-right project-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<!-- ============ CONTACT ============ -->
+		<section class="contact" id="contact">
+			<h2 class="contact-headline">Let's build something reliable.</h2>
+			<p class="contact-sub">Open to engineering-driven work in backend platforms, applied R&amp;D and medical technology.</p>
+			<a href="mailto:contato@adrianojunior.com" class="contact-email">contato@adrianojunior.com</a>
+			<div class="social-links">
+				<a href="https://www.linkedin.com/in/adrianorsjr/" target="_blank" rel="noopener" aria-label="LinkedIn">
+					<i class="ph ph-linkedin-logo" aria-hidden="true"></i>
+				</a>
+				<a href="https://github.com/Adriano3ds" target="_blank" rel="noopener" aria-label="GitHub">
+					<i class="ph ph-github-logo" aria-hidden="true"></i>
+				</a>
+				<a href="cv/resume.pdf" target="_blank" rel="noopener" aria-label="Resume PDF">
+					<i class="ph ph-file-pdf" aria-hidden="true"></i>
+				</a>
+			</div>
+		</section>
+
 	</main>
-	<section class="wave-section">
-		<svg class="bottom-wave" width="1920" height="100" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path fill-rule="evenodd" clip-rule="evenodd" d="M1920 100V44.5406L1812.8 46.3765C1707.2 48.2124 1492.8 51.8842 1280 40.8688C1195.03 36.4702 1109.8 29.7299 1024.52 22.9855C896.233 12.8396 767.828 2.68449 640 0.478856C427.2 -3.19295 212.8 15.1661 107.2 24.3456L0 33.5251V100H1920Z" fill="#006FE6"/>
-		</svg>
-	</section>
-	<footer>
-		<div class="social-networks">
-			<a href="https://www.linkedin.com/in/adrianorsjr/" class="social-link"><i class="fa fa-linkedin"></i></a>
-			<a href="https://github.com/Adriano3ds" class="social-link"><i class="fa fa-github"></i></a>
-			<a href="https://twitter.com/Adriano_RSJR" class="social-link"><i class="fa fa-twitter"></i></a>
-		</div>
+
+	<footer class="site-footer">
+		<p>© 2026 Adriano Junior</p>
+		<a href="?v=dev" class="footer-archive" id="version-toggle">Dev view</a>
+		<a href="/v2" class="footer-archive hidden">Previous versions</a>
 	</footer>
+
 </body>
 </html>
